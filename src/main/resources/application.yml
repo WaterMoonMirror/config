@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: config
+    rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/WaterMoonMirror/scd-config
+          basedir: D:/springCloud_shell/config/git
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#          username:xxx
+#          password: xxxx
+
+
+
